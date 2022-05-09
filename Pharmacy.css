@@ -1,0 +1,269 @@
+body {
+    background-color: honeydew;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    font-weight: bolder;
+    color: whitesmoke;
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(31, 136, 119);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    padding-top: 20px;
+}
+
+#navigate {
+    position: sticky;
+    z-index: 1;
+}
+
+.menu {
+    margin: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu li:hover {
+    background-color: rgb(31, 136, 119);
+}
+
+/*Select last second and third children*/
+.menu li:nth-last-child(-n+3):hover .submenu {
+    display: block;
+}
+
+.submenu {
+    position: absolute;
+    width: auto;
+    max-width: 150px;
+    display: none;
+    padding: 0%;
+    background-color: whitesmoke;
+    top: 42.5px;
+    text-decoration: none;
+}
+
+.submenu li {
+    display: block;
+}
+
+.submenu li:hover {
+    background-color: rgb(31, 136, 119);
+    color: whitesmoke;
+}
+
+.submenu li a {
+    color: rgb(13, 13, 111);
+    font-size: 16px;
+}
+
+/*CSS For Ad Animation*/
+
+#animation img {
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 65%;
+    border-style: solid;
+    border-color: steelblue;
+    border-width: 2px;
+    position: absolute;
+    animation-name: animationFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 18s;
+}
+
+#animation img:nth-of-type(1) {
+    animation-delay: 12s;
+}
+
+#animation img:nth-of-type(2) {
+    animation-delay: 9s;
+}
+
+#animation img:nth-of-type(3) {
+    animation-delay: 6s;
+}
+
+#animation img:nth-of-type(4) {
+    animation-delay: 3s;
+}
+
+#animation img:nth-of-type(5) {
+    animation-delay: 0s;
+}
+
+@keyframes animationFadeInOut {
+    0% {
+        opacity: 1;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 0;
+    }
+
+    85% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.home-section {
+    height: 65%;
+    width: 100%;
+}
+
+.sample {
+    margin: 20px;
+}
+
+.sample div {
+    position: relative;
+    border-radius: 5px;
+    margin: 20px;
+    margin-bottom: 70px;
+    width: 250px;
+    height: 300px;
+    display: inline-block;
+    background-color: rgb(204, 222, 226);
+    padding: 5px;
+}
+
+.sample div>h3 {
+    text-align: center;
+}
+
+.sample div:hover {
+    height: 330px;
+    width: 350px;
+    background-color: rgb(125, 198, 198);
+}
+
+.sample div img {
+    border-radius: 10px;
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sample div button {
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: blue;
+    color: orangered;
+    background-color: whitesmoke;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.sample div button:active {
+    background-color: rgb(250, 234, 230);
+    border-color: rgb(0, 255, 76);
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.lab-div {
+    display: inline-block;
+    overflow: auto;
+    width: 80%;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: auto;
+    border: inset;
+}
+
+.form-div {
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    color: rgb(8, 63, 63);
+    width: 40%;
+    height: 60%;
+    margin: 10px;
+}
+
+.form-div section {
+    margin: 10px;
+}
+
+.form-div input,
+select {
+    margin: 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.lab-image {
+    display: inline-block;
+    position: absolute;
+    height: 60%;
+    width: 40%;
+    overflow: hidden;
+}
+
+.lab-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.form-button {
+    color: whitesmoke;
+    background-color: blueviolet;
+    border-style: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    top: 0%;
+    margin: 0%;
+}
+
+.lab-form-button {
+    margin-left: 25%
+}
